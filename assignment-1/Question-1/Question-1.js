@@ -94,10 +94,8 @@ data.forEach(row=>{
 let average=0;
 let max=0;
 let min=9999999;
-let count=0
 data.forEach(battle=>{
     if(battle["defender_size"]){
-        count+=1
         average+=battle['defender_size'];
         if(min > battle['defender_size']){
             min=battle['defender_size'];
@@ -110,7 +108,7 @@ data.forEach(battle=>{
 });
 
 let defender_size={
-    'average':(average/count),
+    'average':(average/data.length),
     'min':min,
     'max':max
 }
