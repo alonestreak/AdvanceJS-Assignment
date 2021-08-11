@@ -1,3 +1,6 @@
+//To see the output open console of browser after pressing the load Data button
+
+
 $("#load").on("click",function(){
     let url='https://api.github.com/search/repositories?q=';
     const query=$("#github").val();
