@@ -17,4 +17,5 @@ async function nobel(){
         console.log("Didnt receive the proper response")
     }
 }
+
 nobel()
