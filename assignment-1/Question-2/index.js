@@ -50,12 +50,18 @@ $("#load").on("click",function(){
         catch{
             numberOfBranch = 0;
         }
+        let license = ""
+        if(item.license) {
+            license = item.license.name
+        } else {
+            license = ""
+        }
         ans.push({
             name:item.name,
             full_name: item.full_name,
             private: item.private,
             owner:owner,
-            licenseName:item.license?.name,
+            licenseName:license,
             score: item.score,
             numberOfBranch: numberOfBranch
         });
